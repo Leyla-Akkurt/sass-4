@@ -1,0 +1,49 @@
+header{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    color:green;
+}
+
+.container{
+    border:1px solid red;
+    text-align:center;
+
+
+&_h1{
+        @extend header;
+    }
+&_h2{
+    @extend header;
+    display: inline-block;
+    border:1px solid red;
+    padding:1rem;
+    text-decoration: none;
+}
+    
+}
+.section-1{
+        display:flex;
+        padding:2rem;
+        &_blue{
+            padding:2rem;
+            border:1px solid green;
+            color:blue;
+           
+        }
+        &_red{
+            color:red;
+            padding:2rem;
+            border:1px solid green;
+        }
+    }
+    
+.section-2{
+        padding:2rem;
+        &_green{
+            border:1px solid blue;
+            padding:2rem;
+            font-size: 24px;
+            color:green;
+           
+    }
+}
